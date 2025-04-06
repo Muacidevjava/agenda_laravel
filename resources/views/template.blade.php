@@ -1,0 +1,249 @@
+<!doctype html>
+<html language="pt-br">
+	<meta charset="utf-8">
+	<thead>
+		<title>mjailton</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{asset('assets/css/grade.css')}}">
+		<link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+		<link rel="stylesheet" href="{{asset('assets/css/auxiliar.css')}}">
+		<link rel="stylesheet" href="{{asset('assets/componentes/css/style_Componente.css')}}">
+		<link rel="stylesheet" href="{{asset('assets/js/datatables/css/jquery.dataTables.min.css')}}">
+		<link rel="stylesheet" href="{{asset('assets/js/datatables/css/responsive.dataTables.min.css')}}">
+		<link rel="stylesheet" href="{{asset('assets/css/DataTables_boot.css')}}">
+	</thead>
+	<body>
+		<div class="topo">
+			<a href="" class="mobmenu fas fa-bars"></a>
+			<div class="cabecalho">
+				<div class="titulo text-end">
+				<div class="logomarca"><img src="{{asset('assets/img/logo.png')}}" width="130"></div>
+					
+						<ul class="user">
+							<li class="cx-user">
+								<a href=""><img src="{{asset('assets/img/mj.jpg')}}"></a>
+								<ul class="">
+									<li>
+										<h5>Muaci josé da silva filho</h5>	
+										<small>ID 0001</small>
+										<small>28/02/2023</small>	
+									</li>
+									<li>
+										<a href=""  title="sair">Sair</a>
+									</li>
+								</ul>		
+							</li>
+						</ul>		
+			</div>
+		</div>
+		</div>
+		<div class="Conteudo">
+		<div class="site rows  mt-3 mb-3">		
+		<div class="col-3">	
+			<div class="menu_lateral">
+			<a href="" class="mobmenu p-2">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 13" stroke-width="1.5" stroke="#666" class="w-6 h-6">
+				  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				</svg>
+
+			</a>
+				<div class="width-100">
+					
+				</div>
+				<ul class="menu">
+					<li><a href="index.html">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+					  </svg>
+					  Página inicial</a></li>
+					<li><a href="lista.html">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+						</svg>
+					  Lista de cadastro</a></li>
+					<li><a href="cadastro.html">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+ 						 <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+						</svg>
+						Novo cadastro</a></li>
+					
+				</ul>
+			</div>
+		</div>
+			
+		<div class="col-12">				
+				<div class="base">
+					<div class="rows">
+						<div class="col-12">
+							<div class="">
+								<div class="rows">
+									<div class="col-4 d-flex mb-3">
+										<div class="caixa width-100" style="background:#6100FF">
+											<div class="cx-user p-3 py-5 d-flex center-middle justify-content-center">
+												<div class="text-center">
+														<h1 class="h1 mb-0 fw-300">5000</h1>
+														<div class="grupo-icon">
+														<svg xmlns="http://www.w3.org/2000/svg" fill="#0098ac" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="w-6 h-6 cloud">
+														  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+														</svg>
+														<svg xmlns="http://www.w3.org/2000/svg" fill="#0098ac" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="w-6 h-6 chec">
+														  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+														</svg>
+														</div>
+
+														<span class="d-block">Cadastros completos</span>									
+												</div>		
+											</div>
+										</div>
+									</div>
+									<div class="col-4 d-flex mb-3">
+										<div class="caixa width-100"  style="background:#0033FE">
+											<div class="cx-user p-3 py-5 d-flex center-middle justify-content-center">
+												<div class="text-center">
+														<h1 class="h1 mb-0 fw-300">100</h1>	
+														<div class="grupo-icon">
+															<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0098ac" class="w-6 h-6"  style="height:1.8rem">
+															  <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+															</svg>
+														</div>
+														<span class="d-block">Cadastros alterados</span>									
+												</div>		
+											</div>
+										</div>
+									</div>
+									<div class="col-4 d-flex mb-3">
+										<div class="caixa width-100" style="background:#018B94">
+											<div class="cx-user p-3 py-5 d-flex center-middle justify-content-center">
+												<div class="text-center">
+														<h1 class="h1 mb-0 fw-300">50</h1>	
+														<div class="grupo-icon">
+															<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0098ac" class="w-6 h-6">
+															  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+															</svg>
+														</div>
+														<span class="d-block">Cadastros excluídos</span>									
+												</div>		
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 d-flex">
+							<div class="caixa p-3 width-100">
+								<div class="progresso">
+										<div class="d-block text-center">
+											<span class="d-block mb-1 text-uppercase">Cadastrados</span>
+										</div>
+										<div id="progress">
+										  <div id="progbar"><span>0%</span></div>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="rows mt-3">
+						<div class="col-12">
+							<div class="titulo border center-middle  border-w-2">
+								<span class="d-block  text-center">Últimos contatos cadastrados</span>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="caixa width-100 p-2 pt-0 radius-tx table-responsive">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabela">
+									<thead> 
+									  <tr>
+										<th align="center">Id</th>
+										<th align="center">Nome</th>
+										<th align="center">Email</th>
+										<th align="center">Telefone</th>
+										<th align="center">Ação</th>
+									  </tr>
+									</thead> 
+									<tbody>
+										<tr>
+											<td align="center">0001</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-eye d-inline-block mx-1" title="Visualizar"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0002</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-eye d-inline-block mx-1" title="Visualizar"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0003</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-eye d-inline-block mx-1" title="Visualizar"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0004</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-eye d-inline-block mx-1" title="Visualizar"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0005</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-eye d-inline-block mx-1" title="Visualizar"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0006</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-eye d-inline-block mx-1" title="Visualizar"></a>
+											</td>
+										</tr>					
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+		
+		
+		
+<div class="window load" id="carregar">
+	<span class="text-load">Carregando</span>
+</div>
+
+<!--Fundo Preto-->
+<div id="fundo_preto"></div>
+		
+	<script src="{{asset('assets/js/jquery.min.js')}}"></script>
+	<script src="{{asset('assets/componentes/js/js_modal.js')}}"></script>
+	<script src="{{asset('assets/componentes/js/js_util.js')}}"></script>
+	<script src="{{asset('assets/componentes/js/js_util.js')}}"></script>
+	<script src="{{asset('assets/js/kit-awesome.js')}}"></script>
+	
+	<script src="{{asset('assets/https://code.jquery.com/ui/1.12.1/jquery-ui.js')}}"></script>
+	<script src="{{asset('assets/js/datatables/js/dataTables.responsive.min.js')}}"></script>
+	<script src="{{asset('assetsjs/datatables/js/jquery.dataTables.min.js')}}"></script>
+	</body>
+</html>
