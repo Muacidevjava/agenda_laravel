@@ -1,0 +1,306 @@
+<!doctype html>
+<html language="pt-br">
+	<meta charset="utf-8">
+	<thead>
+		<title>mjailton</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/grade.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/auxiliar.css">
+		<link rel="stylesheet" href="componentes/css/style_Componente.css">
+		<link rel="stylesheet" href="js/datatables/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" href="js/datatables/css/responsive.dataTables.min.css">
+		<link rel="stylesheet" href="css/DataTables_boot.css">
+	</thead>
+	<body>
+		<div class="topo">
+			<a href="" class="mobmenu fas fa-bars"></a>
+			<div class="cabecalho">
+				<div class="titulo text-end">
+				<div class="logomarca"><img src="img/logo.png" width="130"></div>
+					
+						<ul class="user">
+							<li class="cx-user">
+								<a href=""><img src="img/mj.jpg"></a>
+								<ul class="">
+									<li>
+										<h5>Manoel Jailton sousa</h5>	
+										<small>ID 0001</small>
+										<small>28/02/2023</small>	
+									</li>
+									<li>
+										<a href=""  title="sair">Sair</a>
+									</li>
+								</ul>		
+							</li>
+						</ul>		
+			</div>
+		</div>
+		</div>
+		<div class="Conteudo">
+		<div class="site rows  mt-3 mb-3">		
+		<div class="col-3">	
+			<div class="menu_lateral">
+			<a href="" class="mobmenu p-2">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 13" stroke-width="1.5" stroke="#666" class="w-6 h-6">
+				  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				</svg>
+
+			</a>
+				<div class="width-100">
+					
+				</div>
+				<ul class="menu">
+					<li><a href="index.html">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+					  </svg>
+					  Página inicial</a></li>
+					<li><a href="lista.html">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+						</svg>
+					  Lista de cadastro</a></li>
+					<li><a href="cadastro.html">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+ 						 <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+						</svg>
+						Novo cadastro</a></li>
+					
+				</ul>
+			</div>
+		</div>
+			<div class="col-12">				
+				<div class="base">
+				<div class="titulo completo border center-middle justify-content-space-between border-w-2">
+					<div class="d-flex center-middle">
+						<span>Lista de cadastro</span>
+					</div>
+					<div class="d-flex center-middle pr-3">
+						<a href="#" class="text-escuro filtro d-flex center-middle" title="filtro">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z" />
+						  </svg>
+						  <small class="d-block text-uppercase ml-1">Filtro</small>
+						</a>
+						<a href="cadastro.html" class="ml-3 text-escuro  d-flex center-middle" title="adicionar novo">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+							</svg>
+							<small class="d-block text-uppercase ml-1"> Adicionar novo </small>
+						</a>
+					</div>
+				</div>
+				<div class="base">					
+					<div class="rows mt-3">
+						<div class="col-12 mostraFiltro mb-3">
+							<div class="caixa bg-laranja1 p-2 pt-4">
+								<form method="" action="">
+									<div class="rows">
+											<div class="col-4 mb-2">
+													<select name="txt_id_empresa" class="form-campo">
+														<option selected="">Selecione o valor...</option>
+														<option value="1">Código</option>
+														<option value="2">Nome</option>
+														<option value="3">Email</option>
+														<option value="4">Cidade</option>
+														<option value="5">Site</option>
+														<option value="6">Fone</option>
+													</select>
+											</div>
+											<div class="col-2 mb-2">
+												<input type="date" name="" placeholder="pesquisar por nome" class="form-campo">
+											</div>	
+											<div class="col mb-2">
+												<input type="text" name="" placeholder="pesquisar por nome" class="form-campo">
+												<button type="submit" class="border-0 position-absolute" style=" right: 23px;background:none;top: 5px;">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+													<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+												  </svg>
+												</button>
+											</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="caixa h-full width-100 p-2 table-responsive">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabela" id="dataTable">
+									<thead> 
+									  <tr>
+										<th align="center">Id</th>
+										<th align="center">Nome</th>
+										<th align="center">Email</th>
+										<th align="center">Telefone</th>
+										<th align="center">Data</th>
+										<th align="center">Ação</th>
+									  </tr>
+									</thead> 
+									<tbody>
+										<tr>
+											<td align="center">0001</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0002</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0003</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0004</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0005</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0006</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0007</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0008</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0009</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0010</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+										<tr>
+											<td align="center">0011</td>
+											<td align="center">Manoel Jailton Nascimento</td>
+											<td align="center">mjailton@gmail.com</td>
+											<td align="center">9899924667</td>
+											<td align="center">28/02/2023</td>
+											<td align="center">
+												<a href="cadastro.html" class="text-verde fas fa-edit d-inline-block mx-1" title="Editar"></a>
+												<a href="cadastro.html" class="text-vermelho fas fa-trash d-inline-block mx-1" title="Excluir"></a>
+											</td>
+										</tr>					
+									</tbody>
+								</table>
+
+								<!--
+								<div class="paginacao">
+									<span><p>Página 1 de 144</p></span>
+									<ul>
+										<li><a href="#" class="fas fa-angles-left" title="Primeiro"></a></li>
+										<li><a href="#" class="fas fa-angle-left" title="Anterior"></a></li>
+										<li class="ativo">1</li>
+										<li><a href="#" class="" title="2">2</a></li>
+										<li><a href="#" class="" title="3">3</a></li>
+										<li><a href="#" class="" title="4">4</a></li>
+										<li><a href="#" class="" title="5">5</a></li>
+										<li><a href="#" class="fas fa-angle-right" title="Próxima"></a></li>
+										<li><a href="#" class="fas fa-angles-right" title="Último"></a></li>
+									</ul>
+								</div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+		
+		
+		
+<div class="window load" id="carregar">
+	<span class="text-load">Carregando</span>
+</div>
+
+<!--Fundo Preto-->
+<div id="fundo_preto"></div>
+		
+	<script src="js/jquery.min.js"></script>
+	<script src="componentes/js/js_modal.js"></script>
+	<script src="componentes/js/js_util.js"></script>
+	<script src="js/kit-awesome.js"></script>
+	
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/datatables/js/dataTables.responsive.min.js"></script>
+	<script src="js/datatables/js/jquery.dataTables.min.js"></script>
+	</body>
+</html>
