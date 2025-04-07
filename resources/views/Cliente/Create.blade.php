@@ -22,7 +22,7 @@
             <section class="caixa">
                 <div class="base-form">
                     <div class="caixa-form p-3">
-                        <form action="" method="">
+                        <form action="{{route('cliente.store')}}" method="POST">
                             <div class="rows">
                                 <div class="col-12 mb-3">
                                     <label class="text-label">Nome</label>
@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="col-2 mb-3">
                                     <label class="text-label">Número</label>
-                                    <input name="numero" value="" type="text" placeholder="Insira seu CEP"
+                                    <input name="numero" value="" type="text" placeholder="Insira seu número"
                                         class="form-campo" />
                                 </div>
 

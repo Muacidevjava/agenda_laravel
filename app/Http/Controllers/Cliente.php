@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cliente as ModelsCliente;
 use Illuminate\Http\Request;
 
 class Cliente extends Controller
@@ -27,7 +28,37 @@ class Cliente extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $validated = $request->validate([
+                'nome' => 'required',
+                'email' => 'required|email',
+                'cpf' => 'required',
+            ]);
+
+            $cliente = new ModelsCliente();
+            $cliente->nome = $request->nome;
+            $cliente->email = $request->email;
+            $cliente->cpf = $request->cpf;
+            $cliente->cep = $request->cep;
+            $cliente->endereco = $request->endereco;
+            $cliente->numero = $request->numero;
+            $cliente->complemento = $request->complemento;
+            $cliente->cidade = $request->cidade;
+            $cliente->bairro = $request->bairro;
+            $cliente->uf = $request->uf;
+            $cliente->celular = $request->celular;
+            $cliente->sexo = $request->sexo;
+            $cliente->nascimento = $request->nascimento;
+            $cliente->observacao = $request->observacao;
+            
+            $cliente->save();
+
+            return redirect()->back()->with('success', 'Cliente cadastrado com sucesso!');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Erro ao cadastrar cliente: ' . $e->getMessage())->withInput();
+        }
+    
+
     }
 
     /**
